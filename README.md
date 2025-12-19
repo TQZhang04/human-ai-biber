@@ -6,18 +6,18 @@ Marissa Todesco, Tianqi Zhang
 ### Project Description
 
 In recent years, advancements in language modeling has led to the production of Large Language Models (LLMs), neural networks capable of producing grammatical, human-like text. 
-Their language capabilities are truly impressive, able to perform complex linguistic tasks (such as summarization and question answering)(CITATION NEEDED) and even pass the Turing test (CITATION NEEDED). 
+Their language capabilities are truly impressive, able to perform complex linguistic tasks (such as summarization and question answering<sup>1</sup> and even pass the Turing test<sup>2</sup>. 
 Because of these capabilities, LLM-generated text has become commonplace in online spaces, academia, and beyond. 
-Since 2023, there has been a significant increase in LLM-generated text in scientific articles (CITATION NEEDED) and in commonly-visited web pages, such as Wikipedia and X (formerly Twitter) (CITATION NEEDED). 
-This has significant societal and ethical implications. Since LLMs are able to produce massive volumes of text in relatively short amounts of time, they can be easily used to proliferate misinformation, fake social interactions online, and author false academic papers, producing fake results. 
-Indeed, in those same online spaces, this is already becoming a problem (CITATION NEEDED).
+Since 2023, there has been a significant increase in LLM-generated text in scientific articles<sup>3</sup> and in commonly-visited web pages, such as Wikipedia<sup>4, 5</sup>. 
+This has significant societal and ethical implications. 
+Since LLMs are able to produce massive volumes of text in relatively short amounts of time, they can be easily used to proliferate misinformation, fake social interactions online, and author false academic papers, producing fake results. 
+Indeed, in commonly used online spaces such as X (formerly Twitter), this is already becoming a problem<sup>6, 7</sup>.
 
-Luckily, many investigations into LLM-generated texts have revealed persisting systematic differences between LLM and human productions (CITATION NEEDED). 
+Luckily, many investigations into LLM-generated texts have revealed persisting systematic differences between LLM and human productions<sup>8, 9, 10</sup>.
 Most of these differences stem from higher-level linguistic features that are not immediately noticable.
 The understanding of these systematic differences is key to understanding not only how LLMs generate text, but also to working towards a way to distinguish them from humans.
-Indeed, many attempts have already been made to build tools for automatic LLM detection (CITATION NEEDED).
-In this project, we build such a tool, making use of simple and interpretable machine learning models (random forest classifier and logistic regression) to gain a deeper and more nuanced understanding of what distinguishes LLM text from human text.
-Specifically, we take inspiration from the work of Reinhardt et. al. (CITATION NEEDED), employing the 67 linguistic features proposed by Douglas Biber (CITATION NEEDED) to classify between LLM-generated and human-generated texts. 
+In this project, we attempt to build an LLM detection tool, making use of simple and interpretable machine learning models (random forest classifier and logistic regression) to gain a deeper and more nuanced understanding of what distinguishes LLM text from human text.
+Specifically, we take inspiration from the work of Reinhardt et. al.<sup>11</sup>, employing the 67 linguistic features proposed by Douglas Biber<sup>12</sup> to classify between LLM-generated and human-generated texts. 
 We extend their work by focusing on more general LLM vs. Human differences rather than exploring differences between different models, as well as more analysis on feature importance and model selection.
 From these analyses, we draw conclusions about LLMs and their linguistic patterns.
 
@@ -112,4 +112,15 @@ We would also like to thank Reinhart et. al. for their paper, the springboard fo
 Their prior analyses and clean dataset made our work much easier and overall made the process smoother.
 
 ### Works Cited
-
+1. [Emergent Abilities of Large Language Models](https://doi.org/10.48550/arXiv.2206.07682)(Wei et. al., Transactions on Machine Learning Research 2022)
+2. [Large Language Models Pass the Turing Test](10.48550/arXiv.2503.23674.) (Cameron R. Jones and Benjamin K. Bergen, 2025)
+3. [Mapping the Increasing Use of LLMs in Scientific Papers](https://openreview.net/forum?id=YX7QnhxESU) (Liang et. al., First Conference on Language Modeling 2024)
+4. [The Rise of AI-Generated Content in Wikipedia](https://aclanthology.org/2024.wikinlp-1.12/) (Brooks et al., WikiNLP 2024)
+5. [Delving into: the quantification of Ai-generated content on the internet (synthetic data)](https://arxiv.org/abs/2504.08755)(Spenneman, 2025)
+6. [Stylometric Detection of AI-Generated Text in Twitter Timelines](https://arxiv.org/abs/2303.03697) (Kumarage et. al., 2023)
+7. [TweepFake: about Detecting Deepfake Tweets](https://arxiv.org/abs/2008.00036) (Fagni et. al., 2020)
+8. [Benchmarking Linguistic Diversity of Large Language Models](https://arxiv.org/abs/2412.10271) (Guo et al., 2024)
+9. [What Comes Next? Evaluating Uncertainty in Neural Text Generators Against Human Production Variability](https://aclanthology.org/2023.emnlp-main.887/)(Giulianelli et al., EMNLP 2023)
+10. [Contrasting Linguistic Patterns in Human and LLM-Generated News Text](https://link.springer.com/article/10.1007/s10462-024-10903-2)(Muñoz-Ortiz et al., Artificial Intelligence Review 2024)
+11. [Do LLMs write like humans? Variation in grammatical and rhetorical styles](https://www.pnas.org/doi/10.1073/pnas.2422455122#supplementary-materials)(Reinhart et. al., Proceedings of the National Academy of Sciences of the United States of America 2025)
+12. [Using Register-Diversified Corpora for General Language Studies](https://aclanthology.org/J93-2001/)(Biber, CL 1993)
